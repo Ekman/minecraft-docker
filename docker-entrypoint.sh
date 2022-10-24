@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd "$CONFIG_DIR"
+
 gosu "$USER" \
     java \
     "-Xmx$MEMORY" "-Xms$MEMORY" \
