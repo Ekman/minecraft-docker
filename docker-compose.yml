@@ -1,6 +1,10 @@
 version: "3"
 services:
   minecraft:
+    image: ghcr.io/ekman/minecraft:1
     build: .
     read_only: true
     volumes: [ "./config:/home/minecraft/config" ]
+    environment:
+      MEMORY: 1G
+    expose: [ "25565:25565" ]
