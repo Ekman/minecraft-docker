@@ -10,6 +10,7 @@ EXPOSE "$PORT"
 RUN adduser --system --group --disabled-login --disabled-password "$USER" \
     && apt-get update \
     && apt-get install --yes --no-install-recommends gosu tini \
+    && apt-get clean --yes \
     && mkdir -p "$CONFIG_DIR" \
     && chown "$USER:$USER" "$CONFIG_DIR"
 
