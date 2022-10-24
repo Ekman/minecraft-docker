@@ -1,0 +1,6 @@
+version: "3"
+services:
+  minecraft:
+    build: .
+    read_only: true
+    volumes: [ "./config:/home/minecraft/config" ]
