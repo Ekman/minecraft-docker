@@ -1,5 +1,8 @@
 FROM debian:bullseye-slim
 
+LABEL org.opencontainers.image.source="https://github.com/Ekman/minecraft-docker"
+LABEL org.opencontainers.image.authors="Niklas Ekman <nikl.ekman@gmail.com>"
+
 ARG DOWNLOAD_SERVER_URL="https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar" USER_ID=1000
 
 ENV USER=minecraft PORT=25565 MEMORY="1G"
