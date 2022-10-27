@@ -30,16 +30,6 @@ Mount all these volumes to your host.
 
 Start the server once. It will generate an `eula.txt` and `server.properties` file inside your mounted configuration directory. Accept the EULA and configure the server accordingly.
 
-
-### Updating the game files
-
-The game files will update when the container starts. I recommend adding the following cron job to
-continuously restart the server:
-
-```sh
-0 4 * * * /usr/local/bin/docker-compose --file /path/to/docker-compose.yml restart minecraft >/dev/null 2>&1
-```
-
 ## Versioning
 
 This project complies with [Semantic Versioning](https://semver.org/).
