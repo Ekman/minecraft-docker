@@ -6,7 +6,8 @@ gosu "$USER" \
     java \
     -server \
     "-Xmx$MEMORY" "-Xms$MEMORY" \
-    -Duser.dir="$CONFIG_DIR" \
+    "-Duser.dir=$CONFIG_DIR" \
     -jar "$BIN_PATH" \
-    nogui --port "$PORT" \
+    --nogui \
+    --port "$PORT" \
     "$@"
