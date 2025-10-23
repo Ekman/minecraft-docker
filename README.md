@@ -1,5 +1,7 @@
 # Minecraft Docker
 
+**I never got around to playing Minecraft. Therefore, I'm archiving the repository as I have no clue if it's still working.**
+
 Run a [Minecraft](https://www.minecraft.net/) dedicated server using Docker. There are plenty of other solutions out there that has way more features than this. I wanted a bare minimum setup.
 
 ## Installation
